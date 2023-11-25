@@ -18,7 +18,8 @@ import javax.validation.constraints.NotNull;
 @RequestMapping(path = "/trading")
 public class TradingAppController {
 
-    private final SignalHandlerImpl signalHandler;
+    @Autowired
+    SignalHandlerImpl signalHandler;
 
     /**
      * Process Signal received for Trading
